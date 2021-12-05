@@ -3,6 +3,10 @@
 .intro {
   background-color: white;
   display: flex;
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .left {
     flex: 1;
@@ -16,9 +20,15 @@
       align-items: flex-end;
       justify-content: center;
       float: right;
-    }
-    img {
-      height: 90%;
+      @include mobile {
+        align-items: flex-start;
+      }
+      img {
+        height: 90%;
+        @include mobile {
+          height: 50%;
+        }
+      }
     }
   }
 
