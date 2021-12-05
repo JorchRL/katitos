@@ -1,13 +1,15 @@
-import "./App.css";
+import "./app.scss";
 import gato from "./imgs/katito.jpg";
+import { useState } from "react";
+import Topbar from "./components/topbar/Topbar";
 
-function App() {
-    return (
-        <div className='App'>
-            <h2>Katitos :3</h2>
-            <img style={{ width: "100vw" }} src={gato} alt='Un katito' />
-        </div>
-    );
-}
+const App = () => {
+  const [showMenu, setShowMenu] = useState(false);
+  return (
+    <div className='app'>
+      <Topbar showMenu={showMenu} setShowMenu={setShowMenu} />
+    </div>
+  );
+};
 
 export default App;
