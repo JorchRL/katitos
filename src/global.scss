@@ -1,3 +1,11 @@
 $mainColor: rgb(38, 41, 214);
 
 $topbarHeight: 70px;
+
+$width: 810px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
