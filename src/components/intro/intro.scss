@@ -5,19 +5,26 @@
   display: flex;
   @include mobile {
     flex-direction: column-reverse;
-    // align-items: ;
+    // align-items: center;
   }
 
   .left {
     flex: 1;
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: flex-end;
+    @include mobile {
+      justify-content: center;
+    }
 
     img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
+      // position: absolute;
+      // top: ;
+      // left: 0;
+      // height: auto;
+      // width: 100%;
+      object-fit: cover;
       @include mobile {
         height: 100%;
       }
