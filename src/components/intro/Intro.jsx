@@ -26,7 +26,7 @@ const Intro = () => {
     <div className='intro' id='intro'>
       <div className='left'>
         <div className='imgContainer'>
-          <img src={catImg}></img>
+          <img src={catImg} alt='a smiling cat'></img>
         </div>
       </div>
       <div className='right'>
@@ -39,7 +39,7 @@ const Intro = () => {
         </div>
         <a href='#portfolio'>
           {/* See our portfolio */}
-          <img src={arrowImg}></img>
+          <img src={arrowImg} alt='arrow pointing down'></img>
         </a>
       </div>
     </div>

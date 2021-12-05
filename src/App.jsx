@@ -1,5 +1,5 @@
 import "./app.scss";
-import gato from "./imgs/katito.jpg";
+// import gato from "./imgs/katito.jpg";
 import { useState } from "react";
 
 import Topbar from "./components/topbar/Topbar";
