@@ -4,30 +4,22 @@
   background-color: white;
   display: flex;
   @include mobile {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column-reverse;
+    // align-items: ;
   }
 
   .left {
     flex: 1;
     overflow: hidden;
-    .imgContainer {
-      width: calc(100vh - #{$topbarHeight});
-      height: calc(100vh - #{$topbarHeight});
-      border-radius: 50%;
-      background-color: crimson;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      float: right;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
       @include mobile {
-        align-items: flex-start;
-      }
-      img {
-        height: 90%;
-        @include mobile {
-          height: 50%;
-        }
+        height: 100%;
       }
     }
   }
@@ -50,19 +42,27 @@
       }
       h3 {
         font-size: 30px;
+        br {
+          display: none;
+          @include mobile {
+            display: inline;
+          }
+        }
+
         span {
           font-size: inherit;
           color: crimson;
-        }
-        .ityped-cursor {
-          animation: blink 1s infinite;
-        }
-        @keyframes blink {
-          50% {
-            opacity: 1;
+          .ityped-cursor {
+            display: contents;
+            animation: blink 1s infinite;
           }
-          100% {
-            opacity: 0;
+          @keyframes blink {
+            50% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+            }
           }
         }
       }

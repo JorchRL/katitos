@@ -25,16 +25,15 @@ const Intro = () => {
   return (
     <div className='intro' id='intro'>
       <div className='left'>
-        <div className='imgContainer'>
-          <img src={catImg} alt='a smiling cat'></img>
-        </div>
+        <img src={catImg} alt='a smiling cat'></img>
       </div>
       <div className='right'>
         <div className='wrapper'>
           <h2>Hi!</h2>
           <h1>we are katitos.</h1>
           <h3>
-            And we do <span ref={textRef}></span>
+            And we do <br />
+            <span ref={textRef}></span>
           </h3>
         </div>
         <a href='#portfolio'>
