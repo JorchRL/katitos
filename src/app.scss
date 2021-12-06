@@ -11,7 +11,7 @@
     position: relative;
     top: $topbarHeight;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     scrollbar-width: none;
     &::-webkit-scrollbar {
       display: none;
