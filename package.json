@@ -5,7 +5,7 @@
     "node": "14.x"
   },
   "private": true,
-  "homepage": "https://jorchrl.github.io/katitos",
+  "homepage": "https://jorchrl.github.io/katitos/",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
